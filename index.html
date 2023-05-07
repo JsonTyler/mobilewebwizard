@@ -11,16 +11,18 @@
       <h1>Mobile Web Wizard</h1>
     </header>
     <div class="overlay">
-      <p>We're currently working on our website, but you can be the first to know when it's ready. Sign up for our mailing list and we'll keep you updated.</p>
+      <p>We're currently working on our website, but you can be the first to know when it's ready. </p>
+      <br>
+      <p>Sign up for our mailing list and we'll keep you updated.</p>
       <form name="contact" netlify-honeypot="bot-field" action="/success" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
         <p style="display: none;">
           <label>Don’t fill this out if you're human: <input name="bot-field"></label>
         </p>
-        <input type="hidden" name="form-name" value="contact">
         <label for="email">Enter your email address:</label>
         <input type="email" id="email" name="email" required>
-        <button type="submit" class="signup-btn">Sign Up</button>
-      </form>
+        <button type="submit">Sign Up</button>
+      </form>      
       <p>For inquiries, contact us at <a href="mailto:info@mobilewebwizard.com" class="email">info@mobilewebwizard.com</a></p>
     </div>
   </body>
