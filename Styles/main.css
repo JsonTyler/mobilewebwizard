@@ -1,48 +1,47 @@
+/* default styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-header .navbar-light {
+/* navbar styles */
+
+/* navbar styles */
+mynavbar {
   position: fixed;
+  top: 0;
   width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+.mynavbar .navbar-nav {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.mynavbar .navbar-nav .nav-item {
+  display: inline-block;
+}
+
+.mynavbar .navbar-nav .nav-link {
   color: #000;
-  z-index: 3;
+  margin: 0 10px;
+  transition: color 0.3s ease;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: black;
-}
-
-header .navbar-light .navbar-nav .nav-link:hover {
+.mynavbar .navbar-nav .nav-link:hover {
   color: #cc0000;
   border-bottom: 2px solid #cc0000;
   padding-bottom: 2px;
-  transform: scale(1.1);
-}
-
-.navbar-nav .nav-link {
-  transition: transform 0.3s ease;
-}
-
-#navbarNav {
-  right: 0;
-  position: absolute;
-}
-
-.mynavbar {
-  transition: background-color 0.5s ease;
-}
-
-.mynavbar.scrolled {
-  background-color: eggshell;
 }
 
 .logo {
   height: 5rem;
 }
 
+/* layout styles */
 .overlay {
   background-image: url("../Images/road.jpg");
   background-size: cover;
@@ -83,12 +82,7 @@ section p {
   font-size: 18px;
 }
 
-.custom-button {
-  background-color: #cc0000;
-  opacity: 1;
-  position: relative;
-  z-index: 2;
-}
+/* component styles */
 
 .form-control {
   margin-left: auto;
@@ -114,6 +108,10 @@ section p {
   font-size: 24px;
 }
 
+.services .card:hover h5 {
+  color: #cc0000;
+}
+
 .card-text {
   font-size: 16px;
 }
@@ -122,25 +120,34 @@ section p {
   margin-right: 10px;
 }
 
-i {
-  z-index: 2;
-  position: relative;
-}
 
-.contact-icons a > i {
-  color: #cc0000;
-  text-decoration: none;
-}
 
-.contact-icons a > i:hover {
-  color: #000;
-}
+/* button/icon styles */
 
 button[type="submit"]{
   color: #fff;
   background-color: #cc0000;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
+  color: #fff;
   background-color: #000;
+}
+
+.contact-icons a > i:hover {
+  color: #000;
+}
+
+i {
+  z-index: 2;
+  position: relative;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  padding: 7px;
+}
+
+.contact-icons a > i {
+  color: #cc0000;
 }
