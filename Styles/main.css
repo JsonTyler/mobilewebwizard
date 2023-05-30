@@ -6,9 +6,7 @@ body {
 }
 
 /* navbar styles */
-
-/* navbar styles */
-mynavbar {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,22 +14,22 @@ mynavbar {
   z-index: 100;
 }
 
-.mynavbar .navbar-nav {
+.navbar-nav {
   justify-content: flex-end;
   margin-left: auto;
 }
 
-.mynavbar .navbar-nav .nav-item {
+.navbar-nav .nav-item {
   display: inline-block;
 }
 
-.mynavbar .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color: #000;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
 
-.mynavbar .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
   color: #cc0000;
   border-bottom: 2px solid #cc0000;
   padding-bottom: 2px;
@@ -76,10 +74,12 @@ section h2 {
   color: #cc0000;
   font-weight: 700;
   font-size: 32px;
+  margin-bottom: 20px;
 }
 
 section p {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* component styles */
@@ -120,11 +120,9 @@ section p {
   margin-right: 10px;
 }
 
-
-
 /* button/icon styles */
 
-button[type="submit"]{
+button[type="submit"] {
   color: #fff;
   background-color: #cc0000;
 }
@@ -150,4 +148,11 @@ i {
 
 .contact-icons a > i {
   color: #cc0000;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+  .overlay {
+    padding: 50px 50px 50px;
+  }
 }
