@@ -212,7 +212,7 @@ button[type="submit"]::before i {
 
 
 /* Media Query for smaller screens */
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .overlay {
     padding: 50px 50px 50px;
   }
