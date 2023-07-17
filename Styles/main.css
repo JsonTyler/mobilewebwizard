@@ -12,6 +12,7 @@ body {
   width: 100%;
   background-color: #fff;
   z-index: 100;
+  padding: 0;
 }
 
 .navbar-nav {
@@ -43,7 +44,7 @@ body {
 }
 
 .logo {
-  height: 5rem;
+  height: 8rem;
 }
 
 /* layout styles */
