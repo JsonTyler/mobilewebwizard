@@ -210,7 +210,32 @@ button[type="submit"]::before i {
   font-size: 24px;
 }
 
+/* Image */
+.centered-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.side-by-side-image {
+  max-width: 100%;
+  margin: 5px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.side-by-side-image:nth-child(1) {
+  max-height: 300px; /* Set the max-height for the first image */
+}
 
 /* Media Query for smaller screens */
 @media (max-width: 992px) {
