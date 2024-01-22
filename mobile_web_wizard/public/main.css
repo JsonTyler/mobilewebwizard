@@ -103,17 +103,19 @@ section p {
   position: relative;
 }
 
-.services .card {
-  transition: transform 0.3s ease;
-}
-
-.services .card:hover {
-  transform: scale(1.05);
-}
-
 .card {
   color: black;
   z-index: 2;
+  transition: transform 0.3s ease; 
+}
+
+.services .row .col .card:hover {
+  transform: scale(1.05);
+}
+
+.services-card, .services-card:hover {
+  transition: none;
+  transform: none;
 }
 
 .card-title {
